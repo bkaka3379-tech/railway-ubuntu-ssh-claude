@@ -1,0 +1,9 @@
+[build]
+builder = "DOCKERFILE"
+
+[deploy]
+startCommand = "bash /app/start.sh"
+restartPolicyType = "ON_FAILURE"
+
+[volumes]
+persist = "/persist"
